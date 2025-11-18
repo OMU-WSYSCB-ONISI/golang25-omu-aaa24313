@@ -1,1 +1,66 @@
-Sample Test File over Golang http.FileServer
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動く時計</title>
+    <script>
+        function updateClock() {
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            if (hours < 10) hours = '0' + hours;
+            if (minutes < 10) minutes = '0' + minutes;
+            if (seconds < 10) seconds = '0' + seconds;
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            document.getElementById('clock').innerHTML = timeString;
+        }
+        setInterval(updateClock, 1000);
+        window.onload = updateClock;
+    </script>
+
+</head>
+<body>
+
+<h1>現在時刻</h1>
+    <div id="clock" style="font-size: 48px; font-weight: bold; color: blue;">
+        00:00:00
+    </div>
+
+
+    <h1>🌐 Phase 0-1: HTML基礎確認</h1>
+    <div>
+            <img src="conor-brown-sqkXyyj4WdE-unsplash.jpg" width="400" alt="クロワッサンの写真">
+        <h2>📝 課題1: 自己紹介セクション作成</h2>
+        <p><strong>指示:</strong> 下記のHTMLコメント部分に、あなたの自己紹介を書いてください。</p>
+
+        <h3>自己紹介</h3>
+        <p>名前: 岡碧</p>
+        <p>職業: 大学生</p>
+        <p>趣味: ピアノ、読書</p>
+        <p>✅ 完了したら、この課題は終了です</p>
+    </div>
+    <div>
+        <h2>📋 課題2: リスト作成</h2>
+        <p><strong>指示:</strong> 好きな食べ物を5つ、番号付きリスト（ol）で作成してください。</p>
+        <ol>
+            <li>クロワッサン</li>
+            <li>オムライス</li>
+            <li>チーズケーキ</li>
+            <li>アップルパイ</li>
+            <li>ピザ
+
+    </div>
+    <div>
+        <h2>🔗 課題3: リンク作成</h2>
+        <p><strong>指示:</strong> 以下のリンクを作成してください：</p>
+        <ul>
+            <li><a href="https://www.google.com/">Google（新しいタブで開く）</a></li>
+            <li><a href="https://github.com/">GitHub（新しいタブで開く）</li>
+        </ul>
+      <a href="second.html">second.html</a>
+    </div>
+</body>
+</html>
